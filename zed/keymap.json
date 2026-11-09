@@ -1,0 +1,92 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-q": ["zed::Unbind", "zed::Quit"]
+    },
+  },
+  {
+      "context": "Workspace",
+      "bindings": {
+        "alt-w": ["zed::Unbind", "search::ToggleWholeWord"]
+      },
+  },
+  {
+      "context": "Workspace",
+      "bindings": {
+        "ctrl-p": ["zed::Unbind", "file_finder::Toggle"]
+      },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-;": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-`": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-;": "editor::ToggleLineNumbers"
+    }
+  },
+  {
+    "context": "Welcome",
+    "unbind": {
+      "ctrl-n": "workspace::NewFile"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-n": "workspace::NewFile"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "unbind": {
+      "ctrl-n": "project_panel::NewFile"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-q": "editor::Paste"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-v": "editor::Paste"
+    }
+  }
+]
